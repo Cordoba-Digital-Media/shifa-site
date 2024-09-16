@@ -19,7 +19,7 @@ const merriweather = Merriweather({
   variable: "--font-merriweather",
 });
 
-export const noto_arabic = Noto_Naskh_Arabic({
+const notoarabic = Noto_Naskh_Arabic({
   subsets: ["arabic"],
   variable: "--font-noto-arabic",
   display: "swap",
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${openSans.variable} ${merriweather.variable} ${noto_arabic.variable} antialiased`}>
+      className={`${openSans.variable} ${merriweather.variable} ${notoarabic.variable} antialiased`}>
       <body className={`font-open-sans bg-green-900 ${openSans.className}`}>
         <div className="container mx-auto min-h-screen flex flex-col bg-stone-50">
           <header className="relative">
